@@ -1,0 +1,15 @@
+.wFull {
+    width: 100%;
+}
+
+.chartContainer {
+    overflow-x: scroll;
+    max-width: 50vw;
+    padding-bottom: .5rem;
+}
+
+@media (max-width: 768px) {
+    .chartContainer {
+        max-width: 80vw;
+    }
+}

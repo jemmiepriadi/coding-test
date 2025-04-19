@@ -1,0 +1,60 @@
+.main {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.section {
+  flex: 2;
+}
+
+.mlOpened {
+  margin-left: 200px;
+  transition: margin-left .3s ease;
+}
+
+.mlClosed {
+  margin-left: 60px;
+  transition: margin-left .3s ease;
+}
+
+.section > h2 {
+  text-align: center;
+  background-image: var(--primary-glow);
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 700px) {
+  .center {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .center::before {
+    transform: none;
+    height: 300px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,96 @@
+.card {
+  scroll-snap-align: start;
+  min-width: 260px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.roundImg {
+  border-radius: 999px;
+  object-fit: cover;
+  margin: 1rem auto;
+  width: 80px;
+  height: 80px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.info h4 {
+  margin-top: 8px;
+  color: #10b981;
+  font-size: 1.2rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.clients {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.clientCard {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.clientCard strong {
+  color: #000;
+}
+
+.clientDetail {
+  color: #555;
+  font-size: 0.85rem;
+}
